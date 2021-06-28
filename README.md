@@ -1,7 +1,7 @@
-# navigation_dqn
-
 [//]: # (Image References)
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
+
+# navigation_dqn
 
 As part of the Deep reinforcement learning nano degree with Udacity, this is an implementation of the DQN algorithm to train an agent how to optimally maximize yellow banana collection.
 
