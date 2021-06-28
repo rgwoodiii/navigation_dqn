@@ -19,7 +19,14 @@ In order to successfully complete our episodic task, the agent is required to ob
 
 ## Dependencies & requirements to get started
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+1. To get up and running, you'll want to download the defined Udacity dependencies [here](https://github.com/udacity/deep-reinforcement-learning#dependencies) 
+
+2. You'll need to grab the following:
+    - Unity ML agents: [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md)
+    - NumPy: [here](http://www.numpy.org/) 
+    - PyTorch: [here](https://pytorch.org/) 
+
+3. Next you'll need the navigation simulation. Download the environment that corresponds to your operating system. 
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -29,21 +36,6 @@ In order to successfully complete our episodic task, the agent is required to ob
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+4. Move the downloaded file to the `p1_navigation/` folder in the DRLND repository. Decompress the file and you'll be ready to go. 
 
-### Instructions
-
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
-
-
-You need only select the environment that matches your operating system:
-- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Linux.zip)
-- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana.app.zip)
-- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86.zip)
-- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86_64.zip)
-
-Then, place the file in the `p1_navigation/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Navigation_Pixels.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
-
-(_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
-
-
+5. Navigate to the `Navigation.ipynb` and load the file using the drlnd kernel. 
