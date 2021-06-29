@@ -12,6 +12,8 @@ Per the agent's action, the agent is rewarded according to banana collection; -1
 Within the environment, there is a discrete action space of 4. At any point in time, the agent is able 1. move forward, 2. move right, 3. move backwards, or 4. move left.
 
 ## algorithm
+
+### DQN
 To train this agent, I utilized the DQN algorithm. The agent will perform an action on the current state according to epsilon-greedy valies. The algorithm performs episodic training until the pre-specified number of episodes has been satisfied or  the agent has solved the environment. (The environment is solved when the average reward over 100 episodes reaches at least 13.) This algorithm utilizes a replay buffer.
 
 Episodes run until the maximum time steps parameter (max_t) has been reached.
@@ -23,6 +25,13 @@ Episodes run until the maximum time steps parameter (max_t) has been reached.
 - eps_start: starting value of epsilon, for epsilon-greedy action selection (0.5)
 - eps_end: minimum value of epsilon  (0.01)
 - eps_decay: multiplicative factor (per episode) for decreasing epsilon (.97)
+
+- BUFFER_SIZE:
+- BATCH_SIZE:
+- GAMMA:
+- TAU:
+- Learning Rate:
+- UPDATE_EVERY:
 
 I tuned the above parameters manually and randomly. It didn't take too long before I was successfully solving the environment in about 300 episodes. I was super excited in my last run to solve it in 108 episodes.
 
