@@ -27,7 +27,6 @@ eps_decay: multiplicative factor (per episode) for decreasing epsilon (.98)
 ## plot & performance
 
 ![image](https://user-images.githubusercontent.com/13371867/123738894-ef699200-d862-11eb-80fb-b49bb92afa13.png)
-
 - Episode 100	Average Score: 3.65
 - Episode 200	Average Score: 8.84
 - Episode 300	Average Score: 11.13
