@@ -35,6 +35,11 @@ eps_decay: multiplicative factor (per episode) for decreasing epsilon (.98)
 
 ## improvements
 
+- My hyper-parameter was largely a manual implementation of random search. Random can be ok, if somewhat controlled in a systematic fashion. I would have preferred to implement grid search or random search to determine hyper parameters in the end.
+
+- To mitigate action value over-estimation; I would like to implement Double Q-Learning.
+
+- Rather than uniform sampling from experience, I could use prioritized experience replay to increase the frequency of higher importance experience. 
 
 
 
