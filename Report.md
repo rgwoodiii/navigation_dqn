@@ -24,6 +24,9 @@ Episodes run until the maximum time steps parameter (max_t) has been reached.
 - eps_end: minimum value of epsilon  (0.01)
 - eps_decay: multiplicative factor (per episode) for decreasing epsilon (.98)
 
+### dqn agent & model
+credit to Udacity for model.py & dqn_agent.py. As part of the Deep Q Learning section in the course, we are led through a coding exercise where these files are supplied in order to train your dqn agent. As I have adapted the Deep Q Learning implementation for that coding exercise, some of the boiler plate code as given by udacity has been used here. 
+
 ## plot & performance
 
 ![image](https://user-images.githubusercontent.com/13371867/123738894-ef699200-d862-11eb-80fb-b49bb92afa13.png)
