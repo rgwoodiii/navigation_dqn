@@ -19,7 +19,7 @@ In order to successfully complete our episodic task, the agent is required to ob
 
 ## Dependencies & requirements to get started
 
-1. To get up and running, you'll want to download the defined Udacity dependencies [here](https://github.com/udacity/deep-reinforcement-learning#dependencies) 
+1. To get up and running, you'll want to download the defined Udacity dependencies [here](https://github.com/udacity/deep-reinforcement-learning#dependencies)
 
 2. You'll need to grab the following:
     - Unity ML agents: [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md)
@@ -35,7 +35,9 @@ In order to successfully complete our episodic task, the agent is required to ob
     (_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
-
+    
 4. Move the downloaded file to the `p1_navigation/` folder in the DRLND repository. Decompress the file and you'll be ready to go. 
 
 5. Navigate to the `Navigation.ipynb` and load the file using the drlnd kernel. 
+
+Credit to Udacity for collating the above resources
