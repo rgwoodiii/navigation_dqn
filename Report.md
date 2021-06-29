@@ -30,7 +30,7 @@ I tuned the above parameters manually and randomly. It didn't take too long befo
 credit to Udacity for model.py & dqn_agent.py. As part of the Deep Q Learning section in the course, we are led through a coding exercise where these files are supplied in order to train your dqn agent. As I have adapted the Deep Q Learning implementation for that coding exercise, some of the boiler plate code as given by udacity has been used here. 
 
 ## plot & performance
-![image](https://user-images.githubusercontent.com/13371867/123744300-cc8fab80-d86b-11eb-92fd-7820732c9596.png)
+![image](https://user-images.githubusercontent.com/13371867/123744365-e5985c80-d86b-11eb-9c00-0676df93dc08.png)
 - Episode 100	Average Score: 12.19
 - Episode 108	Average Score: 13.02
 - Environment solved in 108 episodes!	Average Score: 13.02
