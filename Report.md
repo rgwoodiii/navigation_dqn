@@ -18,11 +18,11 @@ Episodes run until the maximum time steps parameter (max_t) has been reached.
 
 ### hyper-parameters
 
-n_episodes: maximum number of training episodes (1000)
-max_t: maximum number of timesteps per episode  (10000)
-eps_start: starting value of epsilon, for epsilon-greedy action selection (0.5)
-eps_end: minimum value of epsilon  (0.01)
-eps_decay: multiplicative factor (per episode) for decreasing epsilon (.98)
+- n_episodes: maximum number of training episodes (1000)
+- max_t: maximum number of timesteps per episode  (10000)
+- eps_start: starting value of epsilon, for epsilon-greedy action selection (0.5)
+- eps_end: minimum value of epsilon  (0.01)
+- eps_decay: multiplicative factor (per episode) for decreasing epsilon (.98)
 
 ## plot & performance
 
