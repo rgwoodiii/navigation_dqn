@@ -1,9 +1,6 @@
-[//]: # (Image References)
-![image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
-
 # navigation_dqn
 
-As part of the Deep reinforcement learning nano degree with Udacity, this is an implementation of the DQN algorithm to train an agent how to optimally maximize yellow banana collection.
+As part of the Deep reinforcement learning nano degree with Udacity, this is an implementation of the DQN algorithm to train an agent how to optimally maximize yellow banana collection. I have called out credit to udacity explcitly in the respective sections as well, but I thought best to highlight here as well. This implementation of the DQN is an adaptation of the coding exercise provided during the DQN lesson within Udacity's course. The repos, resources, and much of the boiler plate code has been provided by Udacity. Per the instructions of the program, I have adapted the implementation of the DQN from said section of the program to also function for the Navigation project. For more information feel free to reach out or take the course yourself.
 
 ## environment details
 For any reinforcement learning implementation, the agent has to interact with their environment. In this case, the environment is represented as a large square floor with blue and yellow bananas scattered throughout. 
