@@ -18,6 +18,10 @@ To train this agent, I utilized the DQN algorithm. The agent will perform an act
 
 Episodes run until the maximum time steps parameter (max_t) has been reached.
 
+Per the udacity deep reinforcement learning course, the dqn algorithm at first was made for solving video game environments. There are a couple of key processes that are standard for DQNs. DQNs makes use of experienced replay and fixed Q targets. 
+
+Experienced replay is the act of sampling 'observed experience' from our environment. After being saved in replay memory, experiences are subsequently randomly sampled from our replay memory and incorporated in our learning.
+
 ### hyper-parameters
 
 - n_episodes: maximum number of training episodes (1000)
@@ -26,17 +30,27 @@ Episodes run until the maximum time steps parameter (max_t) has been reached.
 - eps_end: minimum value of epsilon  (0.01)
 - eps_decay: multiplicative factor (per episode) for decreasing epsilon (.97)
 
-- BUFFER_SIZE:
-- BATCH_SIZE:
-- GAMMA:
-- TAU:
-- Learning Rate:
-- UPDATE_EVERY:
+- BUFFER_SIZE: the size of the replay buffer (1e5)
+- BATCH_SIZE: size of the mini batch (64)
+- GAMMA: our discount factor (.99)
+- TAU: target parameters soft update (1e-3)
+- Learning Rate: the learning rate  we use (5e-4)
+- UPDATE_EVERY: network update frequecy (4)
 
 I tuned the above parameters manually and randomly. It didn't take too long before I was successfully solving the environment in about 300 episodes. I was super excited in my last run to solve it in 108 episodes.
 
-### dqn agent & model
-credit to Udacity for model.py & dqn_agent.py. As part of the Deep Q Learning section in the course, we are led through a coding exercise where these files are supplied in order to train your dqn agent. As I have adapted the Deep Q Learning implementation for that coding exercise, some of the boiler plate code as given by udacity has been used here. 
+### model architecture
+
+
+A range of neural models were tried exploring wide, deep and shallow configurations. Overall, the simpler models performed as well or better than deeper ones and wide models performed worse than narrow ones. All models started with a 37 x 1 input vector from the environment, constructed two or more fully connected hidden layers and ended with a fully connected layer outputing 4 outputs, one for each action.
+
+The final solution used two hidden layers of 64 and 128 neurons respectively.
+
+QNetwork(
+  (fc1): Linear(in_features=37, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=128, bias=True)
+  (out): Linear(in_features=128, out_features=4, bias=True)
+)
 
 ## plot & performance
 ![image](https://user-images.githubusercontent.com/13371867/123744365-e5985c80-d86b-11eb-9c00-0676df93dc08.png)
