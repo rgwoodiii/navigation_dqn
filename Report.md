@@ -18,9 +18,11 @@ To train this agent, I utilized the DQN algorithm. The agent will perform an act
 
 Episodes run until the maximum time steps parameter (max_t) has been reached.
 
-Per the udacity deep reinforcement learning course, the dqn algorithm at first was made for solving video game environments. There are a couple of key processes that are standard for DQNs. DQNs makes use of experienced replay and fixed Q targets. 
+Per the udacity deep reinforcement learning course, the dqn algorithm at first was made for solving video game environments. The DQN approximates the state-value function through the use of a neural network. There are a couple of key processes that are standard for DQNs. DQNs makes use of experienced replay and fixed Q targets. 
 
 Experienced replay is the act of sampling 'observed experience' from our environment. After being saved in replay memory, experiences are subsequently randomly sampled from our replay memory and incorporated in our learning.
+
+Fixed Q targets means that we optimize our network towards a static target network. 
 
 ### hyper-parameters
 
@@ -40,17 +42,7 @@ Experienced replay is the act of sampling 'observed experience' from our environ
 I tuned the above parameters manually and randomly. It didn't take too long before I was successfully solving the environment in about 300 episodes. I was super excited in my last run to solve it in 108 episodes.
 
 ### model architecture
-
-
-A range of neural models were tried exploring wide, deep and shallow configurations. Overall, the simpler models performed as well or better than deeper ones and wide models performed worse than narrow ones. All models started with a 37 x 1 input vector from the environment, constructed two or more fully connected hidden layers and ended with a fully connected layer outputing 4 outputs, one for each action.
-
-The final solution used two hidden layers of 64 and 128 neurons respectively.
-
-QNetwork(
-  (fc1): Linear(in_features=37, out_features=64, bias=True)
-  (fc2): Linear(in_features=64, out_features=128, bias=True)
-  (out): Linear(in_features=128, out_features=4, bias=True)
-)
+Because of the state space, my neural network takes a 37 by 1 vector from the environment. My output layer includes 4 outputs, 1 corresponding to each action in the action space. There are also 64 nodes in each of the two hidden layers.
 
 ## plot & performance
 ![image](https://user-images.githubusercontent.com/13371867/123744365-e5985c80-d86b-11eb-9c00-0676df93dc08.png)
@@ -65,6 +57,3 @@ QNetwork(
 - To mitigate action value over-estimation; I would like to implement Double Q-Learning.
 
 - Rather than uniform sampling from experience, I could use prioritized experience replay to increase the frequency of higher importance experience. 
-
-
-
