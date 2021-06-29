@@ -24,14 +24,15 @@ eps_start: starting value of epsilon, for epsilon-greedy action selection (0.5)
 eps_end: minimum value of epsilon  (0.01)
 eps_decay: multiplicative factor (per episode) for decreasing epsilon (.98)
 
-## plot
+## plot & performance
 
 ![image](https://user-images.githubusercontent.com/13371867/123738894-ef699200-d862-11eb-80fb-b49bb92afa13.png)
-Episode 100	Average Score: 3.65
-Episode 200	Average Score: 8.84
-Episode 300	Average Score: 11.13
-Episode 362	Average Score: 13.03
-Environment solved in 262 episodes!	Average Score: 13.03
+
+- Episode 100	Average Score: 3.65
+- Episode 200	Average Score: 8.84
+- Episode 300	Average Score: 11.13
+- Episode 362	Average Score: 13.03
+- Environment solved in 262 episodes!	Average Score: 13.03
 
 ## improvements
 
