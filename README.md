@@ -8,6 +8,9 @@ For any reinforcement learning implementation, the agent has to interact with th
 ### rewards
 Per the agent's action, the agent is rewarded according to banana collection; -1 for a blue banana collected and +1 for a yellow banana collected.
 
+### state space
+The state space has to total of 37 dimensions and keeps information on the velocity of the agent, as well a ray based perception of objects in front of the agent.
+
 ### action space
 Within the environment, there is a discrete action space of 4. At any point in time, the agent is able 1. move forward, 2. move right, 3. move backwards, or 4. move left.
 
