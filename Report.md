@@ -19,22 +19,21 @@ Episodes run until the maximum time steps parameter (max_t) has been reached.
 ### hyper-parameters
 
 - n_episodes: maximum number of training episodes (1000)
-- max_t: maximum number of timesteps per episode  (10000)
+- max_t: maximum number of timesteps per episode  (500)
 - eps_start: starting value of epsilon, for epsilon-greedy action selection (0.5)
 - eps_end: minimum value of epsilon  (0.01)
-- eps_decay: multiplicative factor (per episode) for decreasing epsilon (.98)
+- eps_decay: multiplicative factor (per episode) for decreasing epsilon (.97)
+
+I tuned the above parameters manually and randomly. It didn't take too long before I was successfully solving the environment in about 300 episodes. I was super excited in my last run to solve it in 108 episodes.
 
 ### dqn agent & model
 credit to Udacity for model.py & dqn_agent.py. As part of the Deep Q Learning section in the course, we are led through a coding exercise where these files are supplied in order to train your dqn agent. As I have adapted the Deep Q Learning implementation for that coding exercise, some of the boiler plate code as given by udacity has been used here. 
 
 ## plot & performance
-
-![image](https://user-images.githubusercontent.com/13371867/123738894-ef699200-d862-11eb-80fb-b49bb92afa13.png)
-- Episode 100	Average Score: 3.65
-- Episode 200	Average Score: 8.84
-- Episode 300	Average Score: 11.13
-- Episode 362	Average Score: 13.03
-- Environment solved in 262 episodes!	Average Score: 13.03
+![image](https://user-images.githubusercontent.com/13371867/123744300-cc8fab80-d86b-11eb-92fd-7820732c9596.png)
+- Episode 100	Average Score: 12.19
+- Episode 108	Average Score: 13.02
+- Environment solved in 108 episodes!	Average Score: 13.02
 
 ## improvements
 
